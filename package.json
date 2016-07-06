@@ -1,6 +1,6 @@
 {
   "name": "detect-hover",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "JS wrapper for hover media query",
   "main": "lib/index.js",
   "scripts": {
