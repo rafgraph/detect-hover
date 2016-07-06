@@ -1,3 +1,3 @@
-# Detect hover
+# Detect Hover
 
-JavaScript wrapper for `hover` and `any-hover` media queries
+JavaScript wrapper for `hover` and `any-hover` media queries.
