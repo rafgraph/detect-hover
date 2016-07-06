@@ -1,7 +1,7 @@
 {
   "name": "detect-hover",
   "version": "0.1.0",
-  "description": "JS wrapper for hover media query",
+  "description": "JavaScript wrapper for hover and any-hover media queries",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --presets babel-preset-es2015 -d lib",
