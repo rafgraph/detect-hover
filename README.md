@@ -14,12 +14,10 @@ const detectHover = {
   // mutually exclusive (only one will be true)
   hover: boolean,
   none: boolean,
-  onDemand: boolean,
 
   // not mutually exclusive
   anyHover: boolean,
   anyNone: boolean,
-  anyOnDemand: boolean,
 
   // re-run all the detection tests and update state
   update()
@@ -53,7 +51,7 @@ Note that the `update()` function is run once at the time of import to set the o
 
 If `detect-hover` doesn't have access to the `window` at the time of import, you will have to call the `update()` function manually at a later time to update its state.
 
-Note that the `onDemand` and `anyOnDemand` properties are pretty much useless for practical purposes and have been removed from the [July 6th 2016 W3C Media Queries Level 4](todo) draft specification, but were included in the [previous draft (January 26th 2016)](todo) of the spec. Note that all Android touch only devices register that they can hover `onDemand`, which is achieved via a long press - I view this as a feature that is a bug.
+Note that the hover on-demand property was removed from the [July 6th 2016 W3C Media Queries Level 4](todo) draft specification, but was included in the [previous draft (January 26th 2016)](todo) of the spec. Any device that registers as having hover on-demand capabilities will show up as hover `none` in `detectHover`'s state. As a side note, hover on-demand is pretty much useless for practical purposes, and Android touch only devices register that they can hover on-demand, which is achieved via a long press - I view this as a feature that is a bug.
 
 ## Part of the [`detect-it`](todo) family
 - [`detect-it`](todo)
