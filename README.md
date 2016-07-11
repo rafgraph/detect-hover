@@ -1,5 +1,5 @@
 # Detect Hover
-
+<!-- todo: add links, add info about hover media queries -->
 JavaScript wrapper for `hover` and `any-hover` media queries.
 
 [Live detection test](todo) &#8212; [view on npm](todo)
@@ -57,7 +57,7 @@ Note that the `onDemand` and `anyOnDemand` properties are pretty much useless fo
 
 ## Part of the [`detect-it`](todo) family
 - [`detect-it`](todo)
-  - **[`detect-hover`](todo)**
+  - **`detect-hover`**
   - [`detect-pointer`](todo)
   - [`detect-touch-events`](todo)
   - [`detect-pointer-events`](todo)
