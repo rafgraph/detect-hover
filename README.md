@@ -45,13 +45,13 @@ detectHover.hover === true; // primary pointing system can easily hover
 detectHover.none === true; // primary pointing system can’t hover, or there is no pointing system
 
 /*
- * identical to the pointer and hover media features, but they correspond to the
+ * identical to the hover media feature, but they correspond to the
  * union of capabilities of all the pointing devices available to the user -
  * more than one of their values can be true, if different pointing devices have
  * different characteristics
  */
-detectHover.anyHover === true; // any pointing system can easily hover
-detectHover.anyNone === true; // any pointing system can’t hover
+detectHover.anyHover === true;
+detectHover.anyNone === true;
 
 
 // updating the state - most apps won't need to use this at all
