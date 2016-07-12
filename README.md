@@ -6,7 +6,7 @@ JavaScript wrapper for `hover` and `any-hover` media queries.
 
 Exports a reference to a singleton object (a micro state machine with an update function) with its state set to the results of the `hover` and `any-hover` media queries, as well as an `update()` function which re-runs the tests and updates the object's state.
 
-`detect-hover` is one of the micro state machines used by [`detect-it`][detectItRepo] to determine if a device is `mouseOnly`, `touchOnly`, or `hybrid`.
+Note that `detect-hover` is one of the micro state machines used by [`detect-it`][detectItRepo] to determine if a device is `mouseOnly`, `touchOnly`, or `hybrid`.
 
 *For more information on the `hover` and `any-hover` media queries, please see the [W3C Media Queries Level 4 specification][w3cSpecLatest]. For information on browser compatibility, please see [Can I Use matchMedia][canIUseMatchMedia].*
 
@@ -23,7 +23,7 @@ const detectHover = {
   anyNone: boolean,
 
   // re-run all the detection tests and update state
-  update() {...}
+  update() {...},
 }
 ```
 
