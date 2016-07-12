@@ -2,13 +2,14 @@
 
 JavaScript wrapper for `hover` and `any-hover` media queries.
 
-[Live detection test](todo) &#8212; [view on npm](todo)
+[Live detection test][liveDetectionTest] &#8212; [view on npm][onNpm]
 
 Exports a reference to a singleton object (a micro state machine with an update function) with its state set to the results of the `hover` and `any-hover` media queries, as well as an `update()` function which re-runs the tests and updates the object's state.
 
-For more information on the `hover` and `any-hover` media queries, please see the [W3C Media Queries Level 4 specification](todo). For information on browser compatibility, please see [Can I Use matchMedia](todo).
+`detect-hover` is one of the micro state machines used by [`detect-it`][detectItRepo] to determine if a device is `mouseOnly`, `touchOnly`, or `hybrid`.
 
-*`detect-hover` is one of the micro state machines used by [`detect-it`](todo) to determine if a device is `mouseOnly`, `touchOnly`, or `hybrid`.*
+*For more information on the `hover` and `any-hover` media queries, please see the [W3C Media Queries Level 4 specification][w3cSpecLatest]. For information on browser compatibility, please see [Can I Use matchMedia][canIUseMatchMedia].*
+
 
 ## `detectHover` micro state machine
 ```javascript
@@ -58,11 +59,24 @@ detectHover.update();
 ```
 Note that the `update()` function is run once at the time of import to set the object's initial state, and generally doesn't need to be run again. If it doesn't have access to the `window` or the browser doesn't support the `matchMedia()` function (all modern browser do), then the state will be `undefined` (`detect-hover` will not throw an error). If `detect-hover` doesn't have access to the `window` at the time of import, you will have to call the `update()` function manually at a later time to update its state.
 
-Note that the hover on-demand value was removed from the [July 6th 2016 W3C Media Queries Level 4](todo) draft specification, but was included in the [previous draft (January 26th 2016)](todo) of the spec. Any device that registers as having hover on-demand capabilities will show up as hover `none` in `detectHover`'s state. As a side note, hover on-demand is pretty much useless for practical purposes, and Android touch only devices register that they can hover on-demand, which is achieved via a long press - I view this as a feature that is a bug.
+Note that the hover on-demand value was removed from the [July 6th 2016 W3C Media Queries Level 4][w3cSpec7-6-2016] draft specification, but was included in the [previous draft (January 26th 2016)][w3cSpec1-26-2016] of the spec. Any device that registers as having hover on-demand capabilities will show up as hover `none` in `detectHover`'s state. As a side note, hover on-demand is pretty much useless for practical purposes, and Android touch only devices register that they can hover on-demand, which is achieved via a long press - I view this as a feature that is a bug.
 
-## Part of the [`detect-it`](todo) family
-- [`detect-it`](todo)
+## Part of the [`detect-it`][detectItRepo] family
+- [`detect-it`][detectItRepo]
   - **`detect-hover`**
-  - [`detect-pointer`](todo)
-  - [`detect-touch-events`](todo)
-  - [`detect-pointer-events`](todo)
+  - [`detect-pointer`][detectPointerRepo]
+  - [`detect-touch-events`][detectTouchEventsRepo]
+  - [`detect-pointer-events`][detectPointerEventsRepo]
+
+
+<!-- links -->
+[liveDetectionTest]: http://detect-it.rafrex.com/#detect-hover
+[onNpm]: https://www.npmjs.com/package/detect-hover
+[w3cSpecLatest]: https://www.w3.org/TR/mediaqueries-4/#hover
+[w3cSpec7-6-2016]: https://www.w3.org/TR/2016/WD-mediaqueries-4-20160706/#hover
+[w3cSpec1-26-2016]: https://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/#hover
+[canIUseMatchMedia]: http://caniuse.com/#feat=matchmedia
+[detectItRepo]: https://github.com/rafrex/detect-it
+[detectPointerRepo]: https://github.com/rafrex/detect-pointer
+[detectTouchEventsRepo]: https://github.com/rafrex/detect-touch-events
+[detectPointerEventsRepo]: https://github.com/rafrex/detect-pointer-events
