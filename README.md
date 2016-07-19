@@ -11,7 +11,7 @@ Note that `detect-hover` is one of the micro state machines used by [`detect-it`
 *For more information on the `hover` and `any-hover` media queries, please see the [W3C Media Queries Level 4 specification][w3cSpecLatest]. For information on browser compatibility, please see [Can I Use matchMedia][canIUseMatchMedia].*
 
 
-## `detectHover` micro state machine
+### `detectHover` micro state machine
 ```javascript
 const detectHover = {
   // mutually exclusive (only one will be true)
@@ -27,18 +27,15 @@ const detectHover = {
 }
 ```
 
-## Installing `detect-hover`
+### Installing `detect-hover`
 ```terminal
 $ npm install detect-hover
 ```
 
-## Importing `detect-hover`
+### Using `detect-hover`
 ```javascript
 import detectHover from 'detect-hover';
 ```
-
-
-## Using `detect-hover`
 ```javascript
 // using the state
 detectHover.hover === true; // primary pointing system can easily hover
@@ -75,7 +72,7 @@ Note that the `update()` function is run once at the time of import to set the o
 
 Note that the hover on-demand value was removed from the [July 6th 2016 W3C Media Queries Level 4][w3cSpec7-6-2016] draft specification, but was included in the [previous draft (January 26th 2016)][w3cSpec1-26-2016] of the spec. Any device that registers as having hover on-demand capabilities will show up as hover `none` in `detectHover`'s state. As a side note, hover on-demand is pretty much useless for practical purposes, and Android touch only devices register that they can hover on-demand, which is achieved via a long press - I view this as a feature that is a bug.
 
-## Part of the [`detect-it`][detectItRepo] family
+### Part of the [`detect-it`][detectItRepo] family
 - [`detect-it`][detectItRepo]
   - **`detect-hover`**
   - [`detect-pointer`][detectPointerRepo]
