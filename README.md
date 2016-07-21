@@ -2,7 +2,7 @@
 
 JavaScript wrapper for `hover` and `any-hover` media queries.
 
-[Live detection test][liveDetectionTest]
+[Live detection test][liveDetectionTest] &#8212; [view on npm][onNpm]
 
 Exports a reference to a singleton object (a micro state machine with an update function) with its state set to the results of the `hover` and `any-hover` media queries, as well as an `update()` function which re-runs the tests and updates the object's state.
 
@@ -82,6 +82,7 @@ Note that the hover on-demand value was removed from the [July 6th 2016 W3C Medi
 
 <!-- links -->
 [liveDetectionTest]: http://detect-it.rafrex.com/#detect-hover
+[onNpm]: https://www.npmjs.com/package/detect-hover
 [w3cSpecLatest]: https://www.w3.org/TR/mediaqueries-4/#hover
 [w3cSpec7-6-2016]: https://www.w3.org/TR/2016/WD-mediaqueries-4-20160706/#hover
 [w3cSpec1-26-2016]: https://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/#hover
