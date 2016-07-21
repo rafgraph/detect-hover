@@ -16,6 +16,7 @@
     "url": "git+https://github.com/rafrex/detect-hover.git"
   },
   "keywords": [
+    "detect",
     "hover",
     "any-hover",
     "media query"
