@@ -77,7 +77,7 @@ Note that the hover on-demand value was removed from the [July 6th 2016 W3C Medi
   - **`detect-hover`**
   - [`detect-pointer`][detectPointerRepo]
   - [`detect-touch-events`][detectTouchEventsRepo]
-  - [`detect-pointer-events`][detectPointerEventsRepo]
+  - [`detect-passive-events`][detectPassiveEventsRepo]
 
 
 <!-- links -->
@@ -90,4 +90,4 @@ Note that the hover on-demand value was removed from the [July 6th 2016 W3C Medi
 [detectItRepo]: https://github.com/rafrex/detect-it
 [detectPointerRepo]: https://github.com/rafrex/detect-pointer
 [detectTouchEventsRepo]: https://github.com/rafrex/detect-touch-events
-[detectPointerEventsRepo]: https://github.com/rafrex/detect-pointer-events
+[detectPassiveEventsRepo]: https://github.com/rafrex/detect-passive-events
