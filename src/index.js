@@ -1,6 +1,6 @@
 const detectHover = {
   update() {
-    if (typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+    if (typeof window === 'object' && typeof window.matchMedia === 'function') {
       detectHover.hover = window.matchMedia('(hover: hover)').matches;
       detectHover.none = (
         window.matchMedia('(hover: none)').matches ||
